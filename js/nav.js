@@ -1,6 +1,9 @@
-const links = document.querySelector(".header-nav");
-const menuBar = document.querySelector(".menu");
+function nav() {
+  var x = document.getElementById("myTopnav");
 
-menuBar.addEventListener("click", () => {
-  links.classList.toggle("active-header-nav");
-});
+  if (x.className === "header-nav") {
+    x.className += "--responsive";
+  } else {
+    x.className = "header-nav";
+  }
+}
