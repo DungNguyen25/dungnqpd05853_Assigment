@@ -973,6 +973,7 @@ ul {
   }
   /* dai ly */
   .section-daily {
+    height: auto;
     display: grid;
     grid-template-columns: 100%;
   }
