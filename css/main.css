@@ -363,7 +363,6 @@ h6 {
   background-color: #f9f9f9;
   border: 1px solid #edebe9;
   border-bottom: 1px solid #dbd9d7;
-  position: relative;
   width: 100%;
   z-index: inherit;
   height: 50px;
@@ -888,8 +887,11 @@ ul {
   #toggle {
     display: none;
   }
-  #mode{
+  #mode {
     display: none;
+  }
+  .header-logo{
+    text-align: left;
   }
   .header-nav--responsive {
     top: 0;
@@ -936,6 +938,39 @@ ul {
   .section-content .section-h1 {
     font-size: 70px;
   }
+  /* san pham */
+  .section--sp{
+    padding: 50px 20px;
+  }
+  .nav--sp {
+    display: none;
+  }
+  .section--sp .list {
+    display: none;
+  }
+  .section--sp {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .product-menu {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+  .product-water{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: none;
+  }
+  .product-water .water-img{
+    width: 80px;
+    height: 80px;
+  }
+  .product-water .water-h3 {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
   /* footer */
   .footer-col {
     width: 100%;

@@ -98,5 +98,43 @@ function filterProduct(value) {
 window.onload = () => {
   filterProduct("all");
 };
-// onscroll
+// mode
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("light");
+}
+const body = document.querySelector("body");
+const toggle = document.querySelector("#toggle");
+const sunIcon = document.querySelector(".toggle .bx-sun");
+const moonIcon = document.querySelector(".toggle .bxs-moon");
 
+toggle.addEventListener("change", () => {
+  sunIcon.className =
+    sunIcon.className == "bx bx-sun" ? "bx bxs-sun" : "bx bx-sun";
+  moonIcon.className =
+    moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+});
+// nav
+function nav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "header-nav") {
+    x.className += "--responsive";
+  } else {
+    x.className = "header-nav";
+  }
+}
+// questions
+var acc = document.getElementsByClassName("questions-question");
+var a;
+
+for (a = 0; a < acc.length; a++) {
+  acc[a].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
