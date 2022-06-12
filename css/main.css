@@ -890,7 +890,7 @@ ul {
   #mode {
     display: none;
   }
-  .header-logo{
+  .header-logo {
     text-align: left;
   }
   .header-nav--responsive {
@@ -939,7 +939,7 @@ ul {
     font-size: 70px;
   }
   /* san pham */
-  .section--sp{
+  .section--sp {
     padding: 50px 20px;
   }
   .nav--sp {
@@ -956,12 +956,12 @@ ul {
     display: grid;
     grid-template-columns: 80%;
   }
-  .product-water{
+  .product-water {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: none;
   }
-  .product-water .water-img{
+  .product-water .water-img {
     width: 80px;
     height: 80px;
   }
@@ -969,8 +969,31 @@ ul {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 600;
-  font-family: "Roboto", sans-serif;
-}
+    font-family: "Roboto", sans-serif;
+  }
+  /* dai ly */
+  .section-daily {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .profile-daily {
+    width: 100%;
+    position: absolute;
+  }
+  .profile-search {
+    margin: 0 auto;
+  }
+  .name-daily {
+    display: none;
+  }
+  .search-input{
+    background-color: none;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .search-enter{
+    display: none;
+  }
   /* footer */
   .footer-col {
     width: 100%;
