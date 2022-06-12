@@ -887,15 +887,17 @@ ul {
   }
   .header-nav--responsive {
     top: 0;
+    left: 0;
     display: block;
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 500px;
     background-color: black;
     display: grid;
     text-align: center;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
   }
 
   .header-nav--responsive .nav-a {
@@ -904,12 +906,20 @@ ul {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
   }
+  .mode--hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
   /* index */
   .section--index {
     padding: 0 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
   .section--index .section-content {
-    max-width: 100%;
+    width: 100%;
   }
   .section-content .section-h1 {
     font-size: 70px;
