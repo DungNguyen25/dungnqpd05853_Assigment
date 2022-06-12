@@ -4,5 +4,5 @@ function nav() {
     x.className += "--responsive";
   } else {
     x.className = "header-nav";
-  }
+12  }
 }
