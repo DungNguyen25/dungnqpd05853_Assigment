@@ -117,10 +117,13 @@ toggle.addEventListener("change", () => {
 // nav
 function nav() {
   var x = document.getElementById("myTopnav");
+  const profiledaily = document.getElementById("profile-daily");
   if (x.className === "header-nav") {
     x.className += "--responsive";
+    profiledaily.className += "--responsive";
   } else {
     x.className = "header-nav";
+    profiledaily.className = "profile-daily";
   }
 }
 // questions

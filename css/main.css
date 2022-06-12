@@ -872,7 +872,6 @@ ul {
 @media (max-width: 575.98px) {
   /* header */
   .header {
-    position: relative;
     display: grid;
     grid-template-columns: auto 15%;
   }
@@ -894,6 +893,7 @@ ul {
     text-align: left;
   }
   .header-nav--responsive {
+    position: relative;
     top: 0;
     left: 0;
     display: block;
@@ -980,18 +980,22 @@ ul {
     width: 100%;
     position: absolute;
   }
+  .profile-daily--responsive {
+    display: none;
+  }
   .profile-search {
     margin: 0 auto;
+    height: auto;
+    margin-top: 10px;
   }
   .name-daily {
     display: none;
   }
-  .search-input{
-    background-color: none;
+  .search-input {
     border-radius: 10px;
     padding-left: 20px;
   }
-  .search-enter{
+  .search-enter {
     display: none;
   }
   /* footer */
