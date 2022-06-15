@@ -1,20 +1,11 @@
-var acc = document.getElementsByClassName("questions-question");
-c
-var a;
-for (a = 0; a < acc.length; a++) {
-  acc[a].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+// question
+const items = document.querySelectorAll(".items");
+function toggleAccordion() {
+  this.classList.toggle("active");
+  this.nextElementSibling.classList.toggle("active");
 }
+items.forEach((item) => item.addEventListener("click", toggleAccordion));
 // san pham
-
 function filterProduct(value) {
   let products = {
     data: [
@@ -70,7 +61,6 @@ function filterProduct(value) {
       },
     ],
   };
-
   for (let i of products.data) {
     //Create Card
     let card = document.createElement("div");
@@ -94,9 +84,10 @@ function filterProduct(value) {
 
     document.getElementById("products").appendChild(card);
   }
-  let elements = document.querySelectorAll(".card");
+
+  let content = document.querySelectorAll(".card");
   //loop through all cards
-  elements.forEach((element) => {
+  content.forEach((element) => {
     //display all cards on 'all' button click
     if (value == "all") {
       element.classList.remove("hide");
@@ -112,6 +103,7 @@ function filterProduct(value) {
     }
   });
 }
+
 window.onload = () => {
   filterProduct("all");
 };
@@ -119,19 +111,18 @@ window.onload = () => {
 function myFunction() {
   var element = document.body;
   element.classList.toggle("light");
-  const body = document.querySelector("body");
-  const toggle = document.querySelector("#toggle");
-  const sunIcon = document.querySelector(".toggle .bx-sun");
-  const moonIcon = document.querySelector(".toggle .bxs-moon");
-  const menu = document.querySelector(".fa-solid .fa-bars");
-  toggle.addEventListener("change", () => {
-    sunIcon.className =
-      sunIcon.className == "bx bx-sun" ? "bx bxs-sun" : "bx bx-sun";
-    moonIcon.className =
-      moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
-  });
 }
-
+const body = document.querySelector("body");
+const toggle = document.querySelector("#toggle");
+const sunIcon = document.querySelector(".toggle .bx-sun");
+const moonIcon = document.querySelector(".toggle .bxs-moon");
+const menu = document.querySelector(".fa-solid .fa-bars");
+toggle.addEventListener("change", () => {
+  sunIcon.className =
+    sunIcon.className == "bx bx-sun" ? "bx bxs-sun" : "bx bx-sun";
+  moonIcon.className =
+    moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+});
 // nav
 function nav() {
   var x = document.getElementById("myTopnav");
@@ -143,7 +134,6 @@ function nav() {
 }
 // footer
 function footer() {
-  var acc = document.getElementsByClassName("footer-title");
   var i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {

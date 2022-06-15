@@ -114,13 +114,14 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: logo-clip 2s linear infinite;
-  display: inline-block;
 }
 
 .header-nav {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 .header-nav .nav-a {
   margin: 0 10px;
@@ -133,6 +134,7 @@ h6 {
   text-transform: uppercase;
   animation: waviy-nav 2s infinite;
   animation-delay: calc(0.2s * var(--i));
+  font-weight: 600;
 }
 .header-nav .nav-a:hover {
   color: var(--primary-color);
@@ -157,6 +159,9 @@ h6 {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.toggle-container {
+  display: none;
 }
 .toggle {
   cursor: pointer;
@@ -265,8 +270,24 @@ h6 {
 .light .footer-col ul li a {
   color: black;
 }
-.light .content-zoom {
+.light .footer-title h4 {
   background-color: var(--white-color);
+}
+.light .fa-bars {
+  color: white;
+}
+.light .header-nav--responsive {
+  background-color: var(--white-color);
+}
+.light .btn {
+  background-color: var(--white-color);
+}
+.light .fa-circle-down {
+  color: black;
+}
+.light .footer-col .social-links a{
+  background-color: black;
+  color: var(--white-color);
 }
 /*
   -- Dark Mode --
@@ -333,7 +354,7 @@ h6 {
 }
 /* thuonghieu*/
 .section--th {
-  padding: 30px 0;
+  padding: 30px 0 100px;
 }
 .section--th .container {
   font-family: "Roboto", sans-serif;
@@ -551,7 +572,7 @@ h6 {
   animation-delay: calc(0.1s * var(--i));
 }
 .address-daily {
-  animation: address 2s linear;
+  animation: address 1s linear;
   overflow-y: hidden;
 }
 /* cau hoi thuong gap */
@@ -616,13 +637,30 @@ h6 {
 .questions-answer {
   margin-top: 50px;
 }
-.answer-container {
+/* .answer-container {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
+} */
+.answer-container {
+  margin: 0 auto;
+  max-width: 850px;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.answer-container.active {
+  opacity: 1;
+  max-height: 100px;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
 }
 /* tin tuc */
 .news {
@@ -894,6 +932,9 @@ ul {
   .header-nav {
     display: none;
   }
+  .light .fa-bars {
+    color: black;
+  }
   .fa-bars {
     display: block;
     color: var(--white-color);
@@ -902,13 +943,14 @@ ul {
   #toggle {
     display: none;
   }
-  #mode {
-    display: none;
+  .toggle-container {
+    display: block;
   }
   .header-logo {
     text-align: left;
   }
   .header-nav--responsive {
+    padding: 30px 0;
     z-index: 1;
     left: 0;
     top: 0;
@@ -937,6 +979,9 @@ ul {
   }
   .toggle {
     max-width: 100%;
+  }
+  .toggle-container-2 {
+    display: none;
   }
   /* index */
   .section--index {
@@ -1077,14 +1122,25 @@ ul {
     justify-content: center;
     padding-left: 20px;
   }
-
   .fa-circle-down {
     opacity: 1;
   }
-  #footer-son {
+  .footer-son {
     padding: 0 18px;
-    max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+
+  .footer-son.active {
+    opacity: 1;
+    max-height: 100px;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
   }
 }

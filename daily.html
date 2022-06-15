@@ -28,13 +28,23 @@
             <a style="--i:3" href=" daily.html" class="nav-a">Đại lý</a>
             <a style="--i:4" href=" tintuc.html" class="nav-a">Tin tức</a>
             <a style="--i:5" href="cauhoithuonggap.html" class="nav-a">Câu hỏi thường gặp</a>
+            <div class="toggle-container">
+                <input onclick="myFunction()" type="checkbox" id="toggle">
+                <label id="mode" class="toggle" for="toggle">
+                    <i id="icon" class="bx bx-sun"></i>
+                    <i ic="icon" class="bx bxs-moon"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
         </nav>
-        <input onclick="myFunction()" type="checkbox" id="toggle">
-        <label id="mode" class="toggle" for="toggle">
-            <i id="icon" class="bx bx-sun"></i>
-            <i ic="icon" class="bx bxs-moon"></i>
-            <span class="ball"></span>
-        </label>
+        <div class="toggle-container-2">
+            <input onclick="myFunction()" type="checkbox" id="toggle">
+            <label id="mode" class="toggle" for="toggle">
+                <i id="icon" class="bx bx-sun"></i>
+                <i ic="icon" class="bx bxs-moon"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
         <i class="fa-solid fa-bars" onclick="nav()"></i>
     </header>
     <div class="section section-daily">
@@ -115,11 +125,11 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <button class="footer-title btn" onclick="footer()">
+                    <button class="footer-title btn items" onclick="footer()">
                         <h4 class="content-zoom">Về Tocoto</h4>
                         <i class="fa-solid fa-circle-down"></i>
                     </button>
-                    <ul id="footer-son">
+                    <ul class="footer-son">
                         <li><a href="#">Về Tocoto</a></li>
                         <li><a href="#">Về Tocoto</a></li>
                         <li><a href="#">Về Tocoto</a></li>
@@ -127,11 +137,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <button class="footer-title btn" onclick="footer()">
+                    <button class="footer-title btn items" onclick="footer()">
                         <h4 class="content-zoom">Liên Hệ</h4>
                         <i class="fa-solid fa-circle-down"></i>
                     </button>
-                    <ul id="footer-son">
+                    <ul class="footer-son">
                         <li><a href="">Liên Hệ</a></li>
                         <li><a href="">Liên Hệ</a></li>
                         <li><a href="">Liên Hệ</a></li>
@@ -139,11 +149,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <button class="footer-title btn" onclick="footer()">
+                    <button class="footer-title btn items" onclick="footer()">
                         <h4 class="content-zoom">Địa chỉ</h4>
                         <i class="fa-solid fa-circle-down"></i>
                     </button>
-                    <ul id="footer-son">
+                    <ul class="footer-son">
                         <li><a href="">Địa chỉ</a></li>
                         <li><a href="">Địa chỉ</a></li>
                         <li><a href="">Địa chỉ</a></li>
@@ -151,11 +161,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <button class="footer-title btn" onclick="footer()">
+                    <button class="footer-title btn items" onclick="footer()">
                         <h4 class="content-zoom">Follow Us</h4>
                         <i class="fa-solid fa-circle-down"></i>
                     </button>
-                    <div id="footer-son" class="social-links">
+                    <div  class="social-links footer-son">
                         <a href=""><i class="content-zoom fab fa-facebook-f"></i></a>
                         <a href=""><i class="content-zoom fab fa-twitter"></i></a>
                         <a href=""><i class="content-zoom fa-brands fa-instagram"></i></i></a>
