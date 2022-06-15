@@ -11,12 +11,12 @@ let products = {
     {
       productName: "Trà xanh trộn Frappucino",
       category: "TeaFrappuccino",
-      image: "img/frappucino-tea-ice.png",
+      image: "https://dsm01pap004files.storage.live.com/y4mvC9kbTFHyXR7mJIHkdxFFS-DfIyzR_EvXeQdjWvdQGyo_xUYqjEYuin8HK3VE06H1tkw92fcljWKo8pWs3_XRgYH2lfGN_aProfhFkOj5E7sqmP7Wbn07LmYFeSOk-QRMR5M5rvBZ849mZi-iqOmDFB9lXw-6JVajkF2yDaRXWH3iVBzGnlkozvAzIr5s7msY-xXA62V3TwHE6Xe-B4iL0S18UV6_ZPJ-VrRjqli7eE?encodeFailures=1&width=208&height=320",
     },
     {
       productName: "Trà xanh nóng(Trái Tim)",
       category: "TeaHot",
-      image: "img/hot-tea-heard.png",
+      image: "https://dsm01pap004files.storage.live.com/y4mbwIcV3hJJtIyDrrQd0sQcqLQg8lhcsuUwyqFM_T7cn1B_S5OO9v4gIszdDkOzR9G8nrmcqFqkOuanGTukp-wKoVXdubRxJpz4ysLj5J75g5E_mTVDPN02pYr4FeAn27pLDdoL1qjq8MsjsXorkdmPaVJqRBhT5CJceMM8Ph0zYMS8o0wvVg-aqi7VeHoSZAZzwE_P1vtdr1Y1Q85978HDP2EFJ8vw_Arzskd9wZr8Kw?encodeFailures=1&width=223&height=232",
     },
     {
       productName: "Trà xanh nhẹ(lạnh)",

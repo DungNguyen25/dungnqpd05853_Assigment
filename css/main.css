@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   background-color: black;
 }
 html,
@@ -234,14 +234,14 @@ h6 {
 }
 
 .light .toggle .bx-sun {
-  color: var(--white-color)
+  color: var(--white-color);
 }
 .light .toggle .bxs-sun {
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 .light .toggle .bxs-moon {
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 .light .toggle .ball {
@@ -284,7 +284,7 @@ h6 {
 .light .fa-circle-down {
   color: black;
 }
-.light .footer-col .social-links a{
+.light .footer-col .social-links a {
   background-color: black;
   color: var(--white-color);
 }
@@ -295,7 +295,7 @@ h6 {
 /* index */
 
 .section--index {
-  background-image: url("../img/background-index.jpg");
+  background-image: url("https://dsm01pap004files.storage.live.com/y4mDGjW21rVg60fL0JpI5QnRu2pWDKASu7lKJdj5x544JuLQGcJUxdqeYvj-nogN6AZR0I7VSTCxSx9g1hqWuqtvsurnNZUoZ3mtbuivVo2kvlkU45_cBRxzuEx75J61P8ih2LAmUqRook-q7ursFN7G-P8RTsNyLZfYRHwY4EGO7D4rz1lLQTjub-fQD_gVnYawNddGa3Y5NFu7V9BXSOuHm0-o-9gDN_6WiPIA94ZnqE?encodeFailures=1&width=1105&height=737");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
