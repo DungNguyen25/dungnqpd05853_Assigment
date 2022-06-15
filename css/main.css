@@ -228,25 +228,20 @@ h6 {
 /*
   -- Light Mode --
 */
-
-.light {
-  background: #fafafa;
-}
-
 .light .toggle {
   background: linear-gradient(145deg, #e1e1e1, #fff);
   box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #ffffff;
 }
 
 .light .toggle .bx-sun {
-  color: #ffffff;
+  color: var(--white-color)
 }
 .light .toggle .bxs-sun {
-  color: #ffffff;
+  color: var(--white-color)
 }
 
 .light .toggle .bxs-moon {
-  color: #ffffff;
+  color: var(--white-color)
 }
 
 .light .toggle .ball {
