@@ -295,7 +295,7 @@ h6 {
 /* index */
 
 .section--index {
-  background-image: url("https://dsm01pap004files.storage.live.com/y4mDGjW21rVg60fL0JpI5QnRu2pWDKASu7lKJdj5x544JuLQGcJUxdqeYvj-nogN6AZR0I7VSTCxSx9g1hqWuqtvsurnNZUoZ3mtbuivVo2kvlkU45_cBRxzuEx75J61P8ih2LAmUqRook-q7ursFN7G-P8RTsNyLZfYRHwY4EGO7D4rz1lLQTjub-fQD_gVnYawNddGa3Y5NFu7V9BXSOuHm0-o-9gDN_6WiPIA94ZnqE?encodeFailures=1&width=1105&height=737");
+  background-image: url("https://dsm01pap004files.storage.live.com/y4mbjGJ7SfB6ohIaZUxusbXpWu3u-r8G6p9aw9lW7PZfVMMWVrxf2N0Tp4ASpqI2lEj7A52ThHpyr9aZ0QeOnu-FMgPG5CQrOiiF6dlG82gBQHvEqZuM2a8ntlR9V8qKw3245p2sTLpdw1D15V2ygi835rQ1grTLarFvHGSlqZcrPIHXGjqzfaNoqXqpuhFjH_Q?width=6000&height=4000&cropmode=none");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -595,6 +595,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 100px 0;
+  gap: 50px;
 }
 .question-container {
   font-family: "Roboto", sans-serif;
@@ -602,7 +603,6 @@ h6 {
   border-radius: 3px;
   color: var(--white-color);
   width: 900px;
-  margin: 20px 0;
   background-color: black;
   transition: 0.4s;
 }
@@ -625,10 +625,12 @@ h6 {
   margin: 0 auto;
 }
 .questions-current {
+  cursor: pointer;
   font-size: 25px;
   text-align: left;
 }
 .questions-question i {
+  cursor: pointer;
   display: grid;
   align-items: center;
   justify-self: center;
@@ -645,6 +647,7 @@ h6 {
   text-align: center;
 } */
 .answer-container {
+  cursor:default;
   margin: 0 auto;
   max-width: 850px;
   text-align: center;
