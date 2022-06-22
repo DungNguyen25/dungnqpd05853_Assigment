@@ -30,7 +30,7 @@ let products = {
       productName: "Trà xanh(Phin)",
       category: "TeaHot",
       image:
-        "/img/hot-tea-immersion.png",
+        "img/hot-tea-immersion.png",
     },
     {
       productName: "Trà xanh nóng",
@@ -66,7 +66,7 @@ let products = {
       productName: "Trà xanh xây(Đem về)",
       category: "TeaStone",
       image:
-        "/img/stone-tea-glass.png",
+        "img/stone-tea-glass.png",
     },
   ],
 };
